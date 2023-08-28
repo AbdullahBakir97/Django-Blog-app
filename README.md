@@ -1,1 +1,1 @@
-<h1 class = 'green'> Django-Blog-app </h1>
+<h1 class =  color = 'green' > Django-Blog-app </h1>
