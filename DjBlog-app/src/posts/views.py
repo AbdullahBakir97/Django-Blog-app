@@ -5,4 +5,11 @@ from .models import Post , Comment
 
 def post_list(request):
     data = Post.objects.all()
-    return render(request,'all_post.html',{'posts':data})
+    return render(request,'all_posts.html',{'posts':data})
+
+
+
+
+def post_detail(request,post_id):
+    data = Post.objects.get(id='post_id')
+    return render(request , 'post.html' ,{'post':data} )
