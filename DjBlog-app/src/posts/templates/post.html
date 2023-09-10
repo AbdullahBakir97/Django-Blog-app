@@ -7,3 +7,5 @@
 <h5> Author : {{post.author}} </h5>
 {% csrf_token %}
 <p> {{post.content}} </p>
+
+<img src="{{post.image.url}}" alt="">

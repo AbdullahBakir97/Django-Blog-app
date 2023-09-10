@@ -9,8 +9,6 @@ def post_list(request):
     return render(request,'all_posts.html',{'posts':data})
 
 
-
-
 def post_detail(request,post_id):
     data = Post.objects.get(id=post_id)
     return render(request , 'post.html' ,{'post':data})
