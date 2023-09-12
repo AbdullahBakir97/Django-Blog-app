@@ -1,2 +1,2 @@
 <font color="green">Django-Blog-app </font>
-    <h3> with posts and comments </h3>
+    <p> with posts and comments </p>
