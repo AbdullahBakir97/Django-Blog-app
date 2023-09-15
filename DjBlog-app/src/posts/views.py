@@ -5,9 +5,9 @@ from .forms import PostForm
 # Create your views here.
 
 def post_list(request):
-    data = Post.objects.all()
-    return render(request,'all_posts.html',{'posts':data})
-
+    data = Post.objects.all() # List        1 : query
+    return render(request,'all_posts.html',{'posts':data}) # 3 things [requset, 'html', context{}]
+                            # 2 : html page  3: context 
 
 def post_detail(request,post_id):
     data = Post.objects.get(id=post_id)

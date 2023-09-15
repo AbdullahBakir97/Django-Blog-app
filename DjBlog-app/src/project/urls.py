@@ -20,12 +20,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from posts.views import post_list,post_detail,add_post,edit_post,delete_post
+from posts.views2 import PostList,PostDetail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', post_list),
+    path('blog/', PostList.as_view()),
     path('blog/add', add_post),
-    path('blog/<int:post_id>', post_detail ),
+    path('blog/<int:pk>', PostDetail.as_view()),
     path('blog/<int:post_id>/edit', edit_post ),
     path('blog/<int:post_id>/delete', delete_post ),
 ] 
