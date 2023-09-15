@@ -1,0 +1,13 @@
+<h1> Blog </h1>
+<a href="/blog/add">Add Post</a>
+
+<hr>
+{{posts}}
+
+{% for post in post_list %}
+
+    <h4> <a href="/blog/{{post.id}}">
+        {{post.title}}
+    </a> </h4> 
+
+    {% endfor %}

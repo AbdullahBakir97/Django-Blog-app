@@ -1,0 +1,11 @@
+
+<h3> Post Title : {{post.title}} </h3>
+<a href="/blog/{{post.id}}/edit">Edit Post</a>
+<a href="/blog/{{post.id}}/delete">Delete Post</a>
+<hr>
+
+<h5> Author : {{post.author}} </h5>
+{% csrf_token %}
+<p> {{post.content}} </p>
+
+<img src="{{post.image.url}}" alt="">
