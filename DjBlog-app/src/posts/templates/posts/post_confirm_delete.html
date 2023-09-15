@@ -1,0 +1,8 @@
+<form method="post" class="card">
+    {% csrf_token %}
+    <h2>Delete Post</h2>
+    <p>Are you sure that you want to delete "{{object.title}}"?</p>
+    <p class="form-buttons">
+        <input type="submit" class="btn btn-primary" value="Delete">
+    </p>
+</form>
