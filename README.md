@@ -6,6 +6,8 @@
 [![Django](https://img.shields.io/badge/Django-3.2%2B-brightgreen)](https://www.djangoproject.com/)
 
 A feature-rich Django Blog app for managing and publishing articles.
+## LinkedIn post : 
+   https://www.linkedin.com/posts/abdullah-bakir-809065273_github-abdullahbakir97django-blog-app-activity-7114489198937559040-4YI9?utm_source=share&utm_medium=member_ios
 
 ## Table of Contents
 
