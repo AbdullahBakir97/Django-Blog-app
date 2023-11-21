@@ -11,7 +11,7 @@ def post_list(request):
 
 def post_detail(request,post_id):
     data = Post.objects.get(id=post_id)
-    return render(request , 'post.html' ,{'post':data})
+    return render(request , 'post_detail' ,{'post':data})
 
 
 def add_post(request):

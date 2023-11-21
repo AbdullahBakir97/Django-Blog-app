@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Clean Blog - Start Bootstrap Theme</title>
+        <title>My Blog</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -58,14 +58,14 @@
                     {% for post in post_list %}
                         <!-- Post preview-->
                         <div class="post-preview">
-                            <a href="post.html">
+                            <a href="/blog/{{post.id}}">
                                 <h2 class="post-title">{{post.title}}</h2>
-                                <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                                <h3 class="post-subtitle">{{post.content}}</h3>
                             </a>
                             <p class="post-meta">
                                 Posted by
-                                <a href="#!">Start Bootstrap</a>
-                                on September 24, 2023
+                                <a href="#!">{{post.author}}</a>
+                                {{post.publish_date}}
                             </p>
                         </div>
                         <!-- Divider-->
